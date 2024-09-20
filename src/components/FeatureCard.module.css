@@ -1,0 +1,52 @@
+
+.featureCard {
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--Background-LightGrey, #333);
+  background: var(--Background-Grey, #2b2b2b);
+  display: flex;
+  min-width: 240px;
+  gap: 12px;
+  overflow: hidden;
+  justify-content: start;
+  padding: 8px;
+}
+
+.cardContent {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  padding-right: 8px;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.emoji {
+  border-radius: 6px;
+  align-self: stretch;
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+  width: 48px;
+  margin: auto 0;
+  padding: 11px 10px;
+}
+
+@media (max-width: 991px) {
+  .emoji {
+    white-space: initial;
+  }
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  align-self: stretch;
+  margin: auto 0;
+}

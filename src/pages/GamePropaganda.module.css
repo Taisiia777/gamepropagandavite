@@ -1,0 +1,7 @@
+
+.mainContainer {
+  background: var(--Background-Black, #121212);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

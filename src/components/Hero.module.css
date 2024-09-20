@@ -1,0 +1,91 @@
+
+.hero {
+  border-radius: 42px;
+  margin-top: 113px;
+  padding: 0 80px 61px;
+  text-align: center;
+}
+.mainImg {
+  display: flex;
+  position: absolute;
+  top: 72px;
+  left: 50%; /* Центрирование по оси X */
+  transform: translateX(-50%); /* Смещение на 50% ширины назад для центрирования */
+  z-index: 0;
+  width: 1440px;
+  max-width: 1440px;
+
+  height: 805px;
+}
+
+.heroContent {
+  max-width: 1008px;
+  margin: 0 auto;
+  position: relative; /* или absolute, fixed, sticky */
+  z-index: 1;
+}
+
+.heroIcon {
+  width: 154px;
+  border-radius: 20px;
+  margin-top: -55px;
+}
+
+.heroTitle {
+  color: var(--Text-White, #fff);
+  font: 700 60px/64px Onest, sans-serif;
+  letter-spacing: -0.6px;
+  margin-top: 32px;
+}
+
+.heroDescription {
+  color: var(--Text-White, #fff);
+  font: 400 18px/26px Onest, sans-serif;
+  opacity: 0.5;
+  max-width: 494px;
+  margin: 24px auto 0;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+.ctaSony,
+.ctaXbox {
+  border-radius: 50px;
+  font: 500 16px/1 Onest, sans-serif;
+  padding: 15px 24px;
+  min-width: 210px;
+  border: none;
+  cursor: pointer;
+}
+
+.ctaSony {
+  background: var(--Accent-Main, #c5ff00);
+  color: var(---, #000);
+}
+
+.ctaXbox {
+  background: var(--Text-White, #fff);
+  color: var(---, #000);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

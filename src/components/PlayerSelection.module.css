@@ -1,0 +1,74 @@
+
+.playerSelection {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 23px 94px 0;
+}
+
+@media (max-width: 991px) {
+  .playerSelection {
+    padding-right: 20px;
+  }
+}
+
+.container {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.title {
+  color: var(--Text-White, #fff);
+  text-align: center;
+  letter-spacing: -0.48px;
+  font: 700 48px/1 Onest, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1252px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .cardContainer {
+    max-width: 100%;
+  }
+}
+
+.decorativeImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  margin: -114px 0 0 262px;
+}
+
+@media (max-width: 991px) {
+  .decorativeImage {
+    margin-left: 10px;
+  }
+}

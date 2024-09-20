@@ -1,0 +1,105 @@
+.row {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 16px;
+  color: var(--Text-White, #fff);
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font: 500 14px/20px Onest, -apple-system, Roboto, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.serviceList {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 24px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .serviceList {
+    max-width: 100%;
+  }
+}
+
+.serviceItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 95px;
+  margin: auto 0;
+}
+
+.serviceIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+}
+
+.serviceName {
+  margin-top: 8px;
+}
+
+.sonyAccountIcon {
+  aspect-ratio: 2.79;
+  object-fit: contain;
+  object-position: center;
+  width: 95px;
+}
+
+.subscriptionItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: start;
+  width: 69px;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .subscriptionItem {
+    white-space: initial;
+  }
+}
+
+.currencyItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 121px;
+  margin: auto 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
